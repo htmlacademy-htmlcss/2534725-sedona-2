@@ -2,7 +2,7 @@
 
 * Студент: [Семен Кучеренко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2534725).
 * Наставник: [Светлана Корякина](https://htmlacademy.ru/profile/id477401).
-
+* Сайт: [Мой проект Седона](https://semyon855.github.io/2534725-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
