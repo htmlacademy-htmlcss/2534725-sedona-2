@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Семен Кучеренко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2534725).
-* Наставник: `Неизвестно`.
+* Наставник: [Светлана Корякина](https://htmlacademy.ru/profile/id477401).
 
 ---
 
