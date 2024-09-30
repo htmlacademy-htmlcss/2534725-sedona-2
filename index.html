@@ -7,9 +7,9 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header data-test="header" class="main-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="https://htmlacademy.ru/">
+      <a class="navigation-logo" href="index.html">
         <img class="navigation-photo-logo" src="#" alt="Логотип «Седона»">
       </a>
 
@@ -23,7 +23,7 @@
         </li>
 
         <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
 
@@ -43,14 +43,14 @@
     </nav>
   </header>
 
-  <main class="index-main">
+  <main data-test="main" class="index-main">
     <img class="promo-main-pic" src="#" alt="Каньон «Седона»">
     <img class="start-promo-img" src="#" alt="WELCOME">
     <img class="promo-img" src="#" alt="to the gorgeous">
     <img class="title" src="#" alt="SEDONA  «Because the Grand Canyon sucks»">
     <h1 class="visually-hidden">Каньон «Седона»</h1>
 
-    <section class="slogan">
+    <section data-test="hero" class="slogan">
       <h2 class="slogan-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="slogan-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
@@ -60,7 +60,7 @@
         <img class="description-image" src="#" alt="Торговая улица">
       </section>
 
-      <section class="advantage">
+      <section data-test="advantages" class="advantage">
         <ul class="advantage-list">
           <li class="advantage-item">
             <h3 class="advantage-title">Небольшая площадь</h3>
@@ -78,7 +78,7 @@
       </section>
 
       <section class="excursion">
-        <img class="excursion-image" src="" alt="Горнистый путь">
+        <img class="excursion-image" src="#" alt="Горнистый путь">
         <h3 class="excursion-title">Там есть мост дьявола</h3>
         <p class="excursion-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
       </section>
@@ -105,14 +105,14 @@
         </ul>
       </section>
 
-      <section class="booking">
+      <section data-test="search" class="booking">
         <h2 class="booking-title">Заинтересовались?</h2>
         <p class="booking-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="booking-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
     </section>
 
-    <section class="feedback">
+    <section data-test="subscribe" class="feedback">
       <h2 class="feedback-title">Подпишитесь на рассылку</h2>
       <p class="feedback-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -122,7 +122,7 @@
     </section>
   </main>
 
-  <footer class="footer-main">
+  <footer data-test="footer" class="footer-main">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="contacts-list">
