@@ -20,7 +20,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #242424;
-    background-color: #FFFFFF;
+    background-color: grey;
 }
 
 .main-header {
@@ -43,11 +43,6 @@ body {
     width: Fixed (160px);
     height: Hug (36px);
     border-radius: 4px;
-    top: 8px;
-    right: 50px;
-    bottom: 8px;
-    left: 50px;
-    gap: 10px;
     color: #756157;
 }
 
@@ -64,8 +59,6 @@ body {
     background-image: url("../images/title.1.svg");
     width: 186px;
     height: 46px;
-    top: 0.4px;
-    left: 135px;
     background-color: #81B3D3;
 }
 
@@ -73,8 +66,6 @@ body {
     background-image: url("../images/title.2.svg");
     width: 256px;
     height: 28.78px;
-    top: 56.1px;
-    left: 101px;
     background-color: #766458;
 }
 
@@ -82,9 +73,6 @@ body {
     background-image: url("../images/sedona.svg");
     width: 456.7px;
     height: 212.77px;
-    top: 139px;
-    gap: 0px;
-    opacity: 0px;
 }
 
 .slogan-title {
@@ -202,14 +190,8 @@ body {
 
 .booking-button {
     font-weight: 700px;
-    size: 20px;
-    top: 162px;
-    left: 108px; 
+    font-size: 20px; 
     border-radius: 4px;
-    right: 50px;
-    bottom: 8px;
-    gap: 10px;
-    font-size: 20px;
     line-height: 36px;
     text-align: center;
     color: #756157;
@@ -232,10 +214,6 @@ body {
 }
 
 .button-newsletter-button {
-    width: 132px;
-    height: 36px;
-    left: 452px;
-    gap: 0px;
     border-radius: 0px 4px 4px 0px;
     opacity: 0px;
     border-top-right-radius: 4px;
@@ -245,4 +223,248 @@ body {
     line-height: 36px;
     text-align: center;
     color: #82B3D3;
+}
+
+.contacts-link-vk {
+    width: 24px;
+    height: 14px;
+    color: #83b3d3;
+}
+
+.contacts-link-tg {
+    width: 18px;
+    height: 15.1px;
+    color: #83b3d3;
+}
+
+.contacts-link-youtube {
+    width: 22px;
+    height: 17px;
+    color: #83b3d3;
+}
+
+.contacts-phone {
+    font-size: 40px;
+    font-weight: 400px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.contacts-photo-logo {
+    width: 114.9px;
+    height: 32.9px;
+    color: #000000;
+}
+
+h1 {
+    width: 494.4px;
+    height: 78px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.catalog-filter-title {
+    width: 150.43px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.control {
+    width: 63px;
+    height: 23px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.button-start {
+    bottom: 8px;
+    border-radius: 4px;
+    width: 191px;
+    height: 36px;    
+    font-size: 16px;
+    font-weight: 700px;
+    line-height: 20px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.button-end {
+    bottom: 8px;
+    border-radius: 4px;
+    width: 191px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 700px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.booking-hotels {
+    width: 338px;
+    height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+}
+
+.select-control  {
+    width: 141px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+}
+
+.search-list {
+    Width: Fixed (16px);
+    Height: Fixed (14px);
+    Bottom: 3px;
+    color: #000000;
+}
+
+.hotels-img {
+    width: 300px;
+    height: 212px;
+}
+
+.hotels-title {
+    width: 300px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+}
+
+.hotels-price {
+    width: 140px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+} 
+
+.price-numbers {
+    width: 140px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    color: #333333;
+}
+
+.button-button-sub {
+    width: 140px;
+    height: 36px;
+    border-radius: 4px;
+    bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #756157;
+}
+
+.button-button-fav {
+    width: 140px;
+    height: 36px;
+    border-radius: 4px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.pagination-link-pagination-current {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.pagination-link {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.pagination-link-ellipses {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px 0px 0px 0px;
+    color: #000000;
+}
+
+.pagination-link-ten {
+    width: 60px;
+    height: 60px;
+    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 4px 0px 0px 0px;
+    color: #82B3D3;
+}
+
+.button-newsletter-button-catalog {
+    border-radius: 0px 4px 4px 0px;
+    opacity: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.feedback-title-catalog {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+}
+
+.feedback-text-catalog {
+    width: 400px;
+    size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333; 
 }
