@@ -20,7 +20,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #242424;
-    background-color: grey;
+    background-color: #F2F2F2;
 }
 
 .main-header {
@@ -39,11 +39,25 @@ body {
     color: #000000;
 }
 
+.navigation-link {
+    width: 68px;
+    height: 24px;
+    color: #000000;
+}
+
+.navigation-notification {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    background-color: #7DB54F;
+}
+
 .button {
-    width: Fixed (160px);
-    height: Hug (36px);
-    border-radius: 4px;
-    color: #756157;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #756157;
 }
 
 .promo-main-pic {
