@@ -43,6 +43,7 @@ body {
     width: 68px;
     height: 24px;
     color: #000000;
+    text-decoration: none;
 }
 
 .navigation-notification {
@@ -51,6 +52,8 @@ body {
     line-height: 10px;
     text-align: center;
     background-color: #7DB54F;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .button {
@@ -58,36 +61,13 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     background-color: #756157;
+    border: none;
 }
 
-.promo-main-pic {
+.promo-img {
     background-image: url("../images/index-background.jpg");
-    width: 1200px;
-    height: 485px;
-    color: #000000;
-    background-color: #FFFFFF;
-    background-size: 100% auto;
 }
 
-.start-promo-img {
-    background-image: url("../images/title.1.svg");
-    width: 186px;
-    height: 46px;
-    background-color: #81B3D3;
-}
-
-.start-promo-img-2 {
-    background-image: url("../images/title.2.svg");
-    width: 256px;
-    height: 28.78px;
-    background-color: #766458;
-}
-
-.title {
-    background-image: url("../images/sedona.svg");
-    width: 456.7px;
-    height: 212.77px;
-}
 
 .slogan-title {
     font-size: 30px;
@@ -103,6 +83,10 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
+}
+
+.description {
+    background-color: #82B3D3;
 }
 
 .description-title {
@@ -127,6 +111,14 @@ body {
     background-image: url("../images/background1.jpg");
     width: 800px;
     height: 385px;
+}
+
+.advantage-item {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.advantage-list-item {
+    background-color: rgba(0, 0, 0, 0.20);   
 }
 
 .advantage-title {
