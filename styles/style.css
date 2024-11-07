@@ -139,6 +139,10 @@ body {
     color: #333333;
 }
 
+.excursion {
+    background-color: #82B3D3;
+}
+
 .excursion-image {
     background-image: url("../images/background2.jpg");
     width: 800px;
@@ -150,7 +154,7 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .excursion-text {
@@ -158,9 +162,24 @@ body {
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    color: #333333;
+    color: #FFFFFF;
 }
 
+.attraction-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;    
+    color: #000000;
+}
+
+.attraction-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
 
 .dignity-title {
     font-size: 24px;
