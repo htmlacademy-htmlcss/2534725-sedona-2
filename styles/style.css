@@ -23,10 +23,7 @@ body {
     background-color: #F2F2F2;
 }
 
-.main-header {
-    color: #000000;
-    background-color: #FFFFFF;
-}
+.main-header {}
 
 .navigation-list {
     font-size: 20px;
@@ -40,10 +37,10 @@ body {
 }
 
 .navigation-link {
-    width: 68px;
-    height: 24px;
     color: #000000;
     text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .navigation-notification {
@@ -57,11 +54,13 @@ body {
 }
 
 .button {
-    color: #FFFFFF;
-    text-transform: uppercase;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
     background-color: #756157;
-    border: none;
 }
 
 .promo-img {
@@ -90,7 +89,7 @@ body {
 }
 
 .description-title {
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -99,7 +98,7 @@ body {
 }
 
 .description-text {
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -114,11 +113,11 @@ body {
 }
 
 .advantage-item {
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantage-list-item {
-    background-color: rgba(0, 0, 0, 0.20);   
+    background-color: rgba(131, 179, 211, 0.20);   
 }
 
 .advantage-title {
@@ -181,6 +180,14 @@ body {
     color: #333333;
 }
 
+.dignity-item {
+    background: rgba(131, 179, 211, 0.20);
+}
+
+.dignity-item-food {
+    background: rgba(131, 179, 211, 0.12);
+}
+
 .dignity-title {
     font-size: 24px;
     font-weight: 700;
@@ -222,7 +229,13 @@ body {
     color: #756157;
 }   
 
+.feedback {
+    background-image: url(../images/Subscribe.png);
+}
+
 .feedback-title {
+    width: 404px;
+    height: 36.35px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -239,10 +252,9 @@ body {
 }
 
 .button-newsletter-button {
-    border-radius: 0px 4px 4px 0px;
-    opacity: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 0px 2px 2px 0px;
+    width: 232px;
+    height: 52px;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
