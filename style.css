@@ -1,0 +1,461 @@
+@font-face {
+    font-family: "PTSans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PTSans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+body {
+    font-family: "PTSans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #242424;
+    background-color: #F2F2F2;
+}
+
+.main-header {}
+
+.navigation-list {
+    font-size: 20px;
+    line-height: 24px;
+    color: inherit;
+    font-weight: 700;
+}
+
+.navigation-list .navigation-user {
+    color: #000000;
+}
+
+.navigation-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.navigation-notification {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    background-color: #7DB54F;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+.promo-img {
+    background-image: url("../images/index-background.jpg");
+}
+
+
+.slogan-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.slogan-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.description {
+    background-color: #82B3D3;
+}
+
+.description-title {
+    font-family: "PTSans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description-text {
+    font-family: "PTSans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description-image {
+    background-image: url("../images/background1.jpg");
+}
+
+.advantage-item {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-list-item {
+    background-color: rgba(131, 179, 211, 0.20);   
+}
+
+.advantage-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.advantage-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.excursion {
+    background-color: #82B3D3;
+}
+
+.excursion-image {
+    background-image: url("../images/background2.jpg");
+}
+
+.excursion-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.excursion-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.attraction-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;    
+    color: #000000;
+}
+
+.attraction-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.dignity-item {
+    background: rgba(131, 179, 211, 0.20);
+}
+
+.dignity-item-food {
+    background: rgba(131, 179, 211, 0.12);
+}
+
+.dignity-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.dignity-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.booking-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.booking-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px; 
+    border: none;
+    line-height: 36px;
+    text-align: center;
+    background-color: #756157;
+    color: #FFFFFF;
+}   
+
+.feedback {
+    background-image: url("../images/background-form.jpeg");
+    background-size: cover;
+}
+
+.feedback-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.feedback-text {
+    size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.button-newsletter-button {
+    font-family: inherit;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.contacts-link-vk {
+    color: #83b3d3;
+}
+
+.contacts-link-tg {
+    color: #83b3d3;
+}
+
+.contacts-link-youtube {
+    color: #83b3d3;
+}
+
+.contacts-phone {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.contacts-photo-logo {
+    color: #000000;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.catalog-filter-group {
+    background-image: url("../images/catalog-img.jpeg");
+    background-size: cover;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.control-input {
+    font-family: inherit;
+}
+
+.control {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.button-start {
+    border-radius: 4px;   
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.button-end {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.booking-hotels {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+}
+
+.select-control  {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+}
+
+.search-list {
+    color: #000000;
+}
+
+.hotels-img {
+
+}
+
+.hotels-link {
+    text-decoration: none;
+}
+
+.hotels-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000000;
+}
+
+.hotels-price {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+} 
+
+.price-numbers {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+}
+
+.button-button-sub {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    background-color: #756157;
+    color: #FFFFFF;
+}
+
+.button-button-fav {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.pagination-link-pagination-current {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.pagination-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.pagination-link-ellipses {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px 0px 0px 0px;
+    color: #000000;
+}
+
+.pagination-link-ten {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 4px 0px 0px 0px;
+    color: #82B3D3;
+}
+
+.button-newsletter-button-catalog {
+    border-radius: 0px 4px 4px 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #82B3D3;
+}
+
+.feedback-title-catalog {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+}
+
+.feedback-text-catalog {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333; 
+}
