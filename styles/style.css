@@ -16,24 +16,42 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PTSans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #242424;
     background-color: #F2F2F2;
+    margin: 0 auto;
+    width: 1200px;
 }
 
-.main-header {}
+.navigation {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navigation-logo {
+    display: block;
+    margin-right: auto;
+}
 
 .navigation-list {
     font-size: 20px;
     line-height: 24px;
     color: inherit;
     font-weight: 700;
+    margin-left: 28px;
 }
 
 .navigation-list .navigation-user {
     color: #000000;
+    margin-left: auto;
+    margin-right: 20px;
+    margin: 0;
 }
 
 .navigation-link {
@@ -111,6 +129,14 @@ body {
     background-image: url("../images/background1.jpg");
 }
 
+.advantage-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .advantage-item {
     background-color: rgba(131, 179, 211, 0.12);
 }
@@ -173,6 +199,14 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
+}
+
+.dignity-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .dignity-item {
@@ -258,6 +292,10 @@ body {
     color: #FFFFFF;
 }
 
+.footer-main {
+    display: flex;
+}
+
 .contacts-link-vk {
     color: #83b3d3;
 }
@@ -331,6 +369,7 @@ h1 {
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+    background-color: transparent;
 }
 
 .booking-hotels {
