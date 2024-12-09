@@ -14,6 +14,9 @@
     font-display: swap;
 }
 
+.html {
+    height: 100%;
+}
 
 body {
     display: flex;
@@ -36,7 +39,7 @@ body {
 
 .navigation-logo {
     display: block;
-    margin-right: auto;
+    margin-right: 28px;
 }
 
 .navigation-list {
@@ -47,7 +50,7 @@ body {
     margin-left: 28px;
 }
 
-.navigation-list .navigation-user {
+.navigation-user {
     color: #000000;
     margin-left: auto;
     margin-right: 20px;
@@ -82,6 +85,10 @@ body {
     background-color: #756157;
 }
 
+.index-main {
+    flex-grow: 1;
+}
+
 .promo-img {
     background-image: url("../images/index-background.jpg");
 }
@@ -105,6 +112,11 @@ body {
 
 .description {
     background-color: #82B3D3;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .description-title {
@@ -163,6 +175,12 @@ body {
 
 .excursion {
     background-color: #82B3D3;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .excursion-image {
@@ -292,8 +310,14 @@ body {
     color: #FFFFFF;
 }
 
-.footer-main {
+.page-footer-container {
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contacts-item {
+
 }
 
 .contacts-link-vk {
@@ -392,9 +416,6 @@ h1 {
     color: #000000;
 }
 
-.hotels-img {
-
-}
 
 .hotels-link {
     text-decoration: none;
