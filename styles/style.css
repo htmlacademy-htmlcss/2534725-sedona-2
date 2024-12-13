@@ -55,6 +55,8 @@ body {
 
 .navigation-user {
     color: #000000;
+    list-style: none;
+    padding: 0;
     margin: 0;
     margin-left: auto;
     margin-right: 20px;
@@ -362,6 +364,23 @@ h1 {
 
 .main-catalog {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/catalog-img.jpeg);
+    background-size: cover;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .catalog-filter-group {
@@ -429,12 +448,18 @@ h1 {
 }
 
 .search-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     color: #000000;
     margin-right: 70px;
 }
 
 .hotels-list {
-    display: flex;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .hotels-items {
@@ -482,6 +507,12 @@ h1 {
     text-align: center;
     background-color: #82B3D3;
     color: #FFFFFF;
+}
+
+.pagination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .pagination-link-pagination-current {
