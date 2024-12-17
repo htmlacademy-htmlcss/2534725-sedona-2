@@ -29,19 +29,17 @@
       </ul>
 
       <ul class="navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img src="images/search.svg" alt="лупа" width="19" height="19">
-            <span class="visually-hidden">Поиск</span>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="">
             <span class="navigation-notification">12</span>
           </a>
         </li>
       </ul>
-      <button class="button" href="#">Хочу сюда!</button>
+      <a class="button" href="#">Хочу сюда!</a>
     </nav>
   </header>
 
@@ -59,7 +57,6 @@
       </ul>
 
       <form data-test="catalog" class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="catalog-group"></div>
         <fieldset data-test="filter" class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -112,46 +109,53 @@
           </ul>
         </fieldset>
 
-        <input class="field" type="text" name="newsletter-price" id="price-form" placeholder="цена от" required>
-        <input class="field" type="text" name="newsletter-price" id="price-to" placeholder="цена до" required>
-
-        <button class="button-start" type="submit">Применить</button>
-        <button class="button-end" type="submit">Сбросить</button>
+        <fieldset class="price">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <label for="price-from">От</label> <input class="field" type="text" name="newsletter-price" id="price-from"
+            placeholder="цена от" required>
+          <label for="price-to">До</label><input class="field" type="text" name="newsletter-price" id="price-to"
+            placeholder="цена до" required>
+          <button type="button"></button>
+          <button type="button"></button>
+        </fieldset>
+        <div>
+          <button class="button-start" type="submit">Применить</button>
+          <button class="button-end" type="submit">Сбросить</button>
+        </div>
       </form>
-    </div>
     </section>
 
     <section data-test="search" class="booking">
       <div class="select-search">
-      <h2 class="booking-hotels">Найдено Гостиниц: 38</h2>
+        <h2 class="booking-hotels">Найдено Гостиниц: 38</h2>
 
-      <select class="select-control" aria-label="Сортировка">
-        <option value="popular">Сначалa популярное</option>
-        <option value="cheap">Сначалa дешевое</option>
-        <option value="expensive">Сначалa дорогое</option>
-      </select>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначалa популярное</option>
+          <option value="cheap">Сначалa дешевое</option>
+          <option value="expensive">Сначалa дорогое</option>
+        </select>
 
-      <ul class="search-list">
-        <li class="search-items">
-          <a class="search-link" href="#">
-            <img src="images/view-1.svg" alt="6 точек" width="16" height="14">
-            <span class="visually-hidden">Краткий режим каталога</span>
-          </a>
-        </li>
-        <li class="search-items">
-          <a class="search-link" href="#">
-            <img src="images/view-2.svg" alt="похоже на компьютер" width="16" height="14">
-            <span class="visually-hidden">режим просмотра с компьютера</span>
-          </a>
-        </li>
-        <li class="search-items">
-          <a class="search-link" href="#">
-            <img src="images/view-3.svg" alt="подробнее" width="16" height="14">
-            <span class="visually-hidden">подробный режим каталога</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+        <ul class="search-list">
+          <li class="search-items">
+            <a class="search-link" href="#">
+              <img src="images/view-1.svg" alt="6 точек" width="16" height="14">
+              <span class="visually-hidden">Краткий режим каталога</span>
+            </a>
+          </li>
+          <li class="search-items">
+            <a class="search-link" href="#">
+              <img src="images/view-2.svg" alt="похоже на компьютер" width="16" height="14">
+              <span class="visually-hidden">режим просмотра с компьютера</span>
+            </a>
+          </li>
+          <li class="search-items">
+            <a class="search-link" href="#">
+              <img src="images/view-3.svg" alt="подробнее" width="16" height="14">
+              <span class="visually-hidden">подробный режим каталога</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <ul class="hotels-list">
         <li class="hotels-items">
           <a href="card.html">
@@ -244,36 +248,30 @@
   </main>
 
   <footer data-test="footer" class="footer-main">
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+    <div class="page-footer-container">
       <ul class="contacts-list">
         <li class="contacts-item">
-          <img src="images/vk.svg" alt="vk" width="25" height="15">
-          <a class="contacts-link-vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+          <a class="contacts-link-vk" aria-label="Вконтакте" href="https://vk.com/htmlacademy">
           </a>
         </li>
         <li class="contacts-item">
-          <img src="images/telegram.svg" alt="Tg" width="18" height="16">
-          <a class="contacts-link-tg" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграмм</span>
+          <a class="contacts-link-tg" aria-label="Телеграмм" href="https://t.me/htmlacademy">
           </a>
         </li>
         <li class="contacts-item">
-          <img src="images/youtube.svg" alt="Inst" width="23" height="18">
-          <a class="contacts-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
+          <a class="contacts-link-youtube" aria-label="Ютуб" href="https://www.youtube.com/user/htmlacademyru">
           </a>
         </li>
       </ul>
-
       <a class="contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
 
       <a class="contacts" href="https://htmlacademy.ru/">
         <img class="contacts-photo-logo" src="images/html-academy.svg" alt="Логотип HTML Academy" width="115"
           height="34">
       </a>
-    </section>
+
+    </div>
   </footer>
 </body>
+
 </html>
