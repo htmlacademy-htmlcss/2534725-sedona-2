@@ -32,6 +32,7 @@ body {
 }
 
 .navigation {
+    align-items: center;
     display: flex;
     margin: 0 auto;
     padding-left: 70px;
@@ -44,6 +45,11 @@ body {
 }
 
 .navigation-list {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     font-size: 20px;
     line-height: 24px;
     color: inherit;
@@ -52,23 +58,51 @@ body {
 }
 
 .navigation-user {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     color: #000000;
     margin-left: auto;
     margin-right: 20px;
 }
 
 .navigation-user-link {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 64px;
     text-decoration: none;
 }
 
+.navigation-user-link-search {
+    background-image: url("../images/search.svg");
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.navigation-user-link-favorite {
+    background-image: url("../images/favorites.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .navigation-link {
+    display: block;
     color: #000000;
     text-decoration: none;
     font-size: 20px;
     line-height: 24px;
+    padding: 20px 16px;
 }
 
 .navigation-notification {
+    padding: 2px;
+    border-radius: 50%;
+    left: 25px;
+    top: 20px;
+    position: absolute;
     font-size: 10px;
     font-weight: 400;
     line-height: 10px;
@@ -79,6 +113,8 @@ body {
 }
 
 .button {
+    padding: 8px 50px;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -100,15 +136,21 @@ body {
 }
 
 .promo-img {
+    display: flex;
+    padding: 0;
+    margin: 0;
     background-image: url("../images/index-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
-
+ 
 
 .slogan-title {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    text-align: center;
+    text-align: left;
     color: #000000;
     text-transform: uppercase;
 }
@@ -117,15 +159,19 @@ body {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    text-align: center;
+    text-align: left;
     color: #333333;
+}
+
+.descriptions { 
+    display: block;
+    list-style: none; 
 }
 
 .description {
     margin: 0;
     padding: 0;
 }
-
 
 .descriptions li:nth-child(1) .description {
     background-color: #82B3D3;
@@ -207,6 +253,7 @@ body {
 
 .dignity-list {
     text-align: center;
+    list-style: none;
 }
 
 .dignity-item {
@@ -252,17 +299,22 @@ body {
 }
 
 .booking-button {
+    
+    margin-left: 425px;
+    text-align: center;
+    padding: 8px 50px;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px; 
     border: none;
     line-height: 36px;
-    text-align: center;
     background-color: #756157;
     color: #FFFFFF;
 }   
 
 .feedback {
+    align-text: center;
     background-image: url("../images/background-form.jpeg");
     background-size: cover;
 }
