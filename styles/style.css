@@ -31,6 +31,17 @@ body {
     width: 1200px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .navigation {
     align-items: center;
     display: flex;
@@ -385,30 +396,68 @@ body {
 }
 
 .contacts-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.contacts-link-vk {
-    color: #83b3d3;
+.contacts-link-svg {
+    fill: #83b3d3;
 }
 
-.contacts-link-tg {
-    color: #83b3d3;
+.contacts-link-svg:hover {
+    fill:  #68A2CA;
 }
 
-.contacts-link-youtube {
-    color: #83b3d3;
+.contacts-link-svg:focus-visible {
+    fill:  #68A2CA;
+}
+
+.contacts-link-svg:active {
+    fill: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-phone {
+    color: #000000;
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
     text-align: center;
-    color: #000000;
     text-decoration: none;
+}
+
+.phone-svg {
+    fill: #000000;
+}
+
+.phone-svg:hover {
+    fill: #756157;
+}
+
+.phone-svg:focus-visible {
+    fill: #756157;
+}
+
+.phone-svg:active {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+.photo-logo-svg {
+    fill:#000000;
+}
+
+.photo-logo-svg:hover {
+    fill:  #756157;
+}
+
+.photo-logo-svg:focus-visible {
+    fill:  #756157;
+}
+
+.photo-logo-svg:active {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .contacts-photo-logo {
@@ -429,14 +478,48 @@ h1 {
     list-style: none;
     padding: 35px 70px 70px 70px;
     margin: 0;
-    background-image: url(../images/catalog-img.jpeg);
+    background-image: url("../images/catalog-img.jpeg");
     background-size: cover;
 }
 
-.list {
+.breadcrumbs {
     display: flex;
+    gap: 20px;
+    align-items: center;
     list-style: none;
     padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+    position: relative;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+    content: "";
+    left: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 8px; 
+    height: 11px;
+    background-image: url("../images/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs-link-home {
+    display: block;
+    width: 13px; 
+    height: 13px;
+    background-image: url("../images/home.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs-link {
+    margin: 0;
 }
 
 .catalog-filter {
@@ -526,7 +609,7 @@ h1 {
 
 .search-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 25px 25px 25px;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -548,6 +631,11 @@ h1 {
     text-decoration: none;
 }
 
+.hotels-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .hotels-title {
     font-size: 24px;
     font-weight: 700;
@@ -567,6 +655,11 @@ h1 {
     font-weight: 400;
     line-height: 21px;
     color: #333333;
+}
+
+.button-sub-fav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .button-button-sub {
@@ -593,6 +686,13 @@ h1 {
 }
 
 .pagination-link-pagination-current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color:  #F2F2F2;
+    text-decoration: none;
     border-radius: 4px;
     font-size: 20px;
     font-weight: 700;
@@ -602,14 +702,28 @@ h1 {
 }
 
 .pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color:  #82B3D3;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
-    color: #82B3D3;
+    color:  #FFFFFF;
 }
 
 .pagination-link-ellipses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color:  #F2F2F2;
+    text-decoration: none;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -619,12 +733,19 @@ h1 {
 }
 
 .pagination-link-ten {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color:  #82B3D3;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
     border-radius: 4px 0px 0px 0px;
-    color: #82B3D3;
+    color: #FFFFFF;
 }
 
 .button-newsletter-button-catalog {
