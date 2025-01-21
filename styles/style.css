@@ -683,6 +683,7 @@ h1 {
 .pagination-list {
     display: flex;
     list-style: none;
+    gap: 8px;
 }
 
 .pagination-link-pagination-current {
@@ -698,6 +699,7 @@ h1 {
     font-weight: 700;
     line-height: 36px;
     text-align: center;
+    border-radius: 4px 0px 0px 0px;
     color: #000000;
 }
 
@@ -713,6 +715,7 @@ h1 {
     font-weight: 700;
     line-height: 36px;
     text-align: center;
+    border-radius: 4px 0px 0px 0px;
     color:  #FFFFFF;
 }
 
@@ -732,21 +735,6 @@ h1 {
     color: #000000;
 }
 
-.pagination-link-ten {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background-color:  #82B3D3;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: center;
-    border-radius: 4px 0px 0px 0px;
-    color: #FFFFFF;
-}
 
 .button-newsletter-button-catalog {
     border-radius: 0px 4px 4px 0px;
