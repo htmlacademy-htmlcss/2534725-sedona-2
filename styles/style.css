@@ -150,11 +150,12 @@ body {
     display: flex;
     padding: 51px 371px 82px 371px;
     margin: 0;
-    background-image: url("../images/index-background.jpg");
-    background-position: center;
+    background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+    background-size: contain, cover;
+    background-position: bottom center, center;
     background-repeat: no-repeat;
 }
- 
+
 
 .slogan-title {
     font-size: 30px;
@@ -181,6 +182,10 @@ body {
     list-style: none; 
 }
 
+.descriptions-item {
+   
+}
+
 .descriptions-item-wide {
     grid-column: 1 / 4;
 }
@@ -200,42 +205,59 @@ body {
     padding-right: 85px;
 }
 
-.descriptions li:nth-child(1) .description {
+.description-theme-1 {
     background-color: #82B3D3;
     color: #FFFFFF;
 }
 
-.descriptions li:nth-child(2) {
+.description-theme-2 {
     background-color: rgba(131, 179, 211, 0.12);
     color: #000000;
+    padding: 120px 85px 120px 85px;
 }
 
-.descriptions li:nth-child(3) {
+.description-theme-3 {
     background-color: rgba(131, 179, 211, 0.20);
     color: #000000;
-}
-
-.descriptions li:nth-child(4) {
-    background-color: rgba(131, 179, 211, 0.12);
-    color: #000000;
-}
-
-.descriptions li:nth-child(5) .description {
-    background-color: #82B3D3;
-    color: #FFFFFF;
+    padding: 120px 85px 120px 85px;
 }
 
 .description-title {
-    font-family: "PTSans";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
+    margin: 0;
+    margin-bottom: 60px;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
+}
+
+.description-title::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.description-theme-1 .description-title::after {
+    background-color: #FFFFFF;
+}
+
+.description-theme-2 .description-title::after {
+    background-color: #000000;
+}
+
+.description-theme-3 .description-title::after {
+    background-color: #000000;
 }
 
 .description-text {
-    font-family: "PTSans";
+    margin: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -279,7 +301,7 @@ body {
 }
 
 
-.dignity-list {
+.feature-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
@@ -288,15 +310,32 @@ body {
     list-style: none;
 }
 
-.dignity-item {
+.feature-item {
     background: rgba(131, 179, 211, 0.20);
+    padding: 81px 85px 81px 85px;
 }
 
-.dignity-item-food {
-    background: rgba(131, 179, 211, 0.12);
+.feature-item-housing {
+    background-color: rgba(131, 179, 211, 0.2);
+    background-position: center top;
+    background-repeat: no-repeat;    
 }
 
-.dignity-title {
+.feature-item-food {
+    background-color: rgba(131, 179, 211, 0.12);
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.feature-item-souvenirs {
+    background-color: rgba(131, 179, 211, 0.2);
+   
+    background-position: center top;
+    background-repeat: no-repeat;   
+}
+
+.feature-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -304,7 +343,9 @@ body {
     color: #000000;
 }
 
-.dignity-text {
+.feature-title
+
+.feature-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -371,14 +412,23 @@ body {
     color: #FFFFFF;
 }
 
+.newsletter-form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .field {
-    padding: 12px 20px;
-    border-radius: 4px;
+    font-family: inherit;
+    padding: 18px 20px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .button-newsletter-button {
     padding: 8px 50px;
-    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
     font-family: inherit;
     border: none;
     font-size: 20px;
@@ -497,7 +547,7 @@ h1 {
     position: relative;
 }
 
-.breadcrumbs-item:not(:last-child):after {
+.breadcrumbs-item:not(:last-child)::after {
     content: "";
     left: 20px;
     bottom: 0;
