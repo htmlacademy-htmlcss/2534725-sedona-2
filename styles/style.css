@@ -101,11 +101,23 @@ body {
 
 .navigation-link {
     display: block;
+    position: relative;
     color: #000000;
     text-decoration: none;
     font-size: 20px;
     line-height: 24px;
     padding: 20px 16px;
+}
+
+.navigation-link-active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    margin: 0 auto;
+    background-color: #000000;
 }
 
 .navigation-notification {
@@ -183,7 +195,7 @@ body {
 }
 
 .descriptions-item {
-   
+    display: flex;
 }
 
 .descriptions-item-wide {
@@ -199,6 +211,7 @@ body {
 }
 
 .description-group {
+    box-sizing: border-box;
     width: 400px;
     padding-top: 102px;
     padding-left: 85px;
@@ -478,20 +491,16 @@ body {
     text-decoration: none;
 }
 
-.phone-svg {
-    fill: #000000;
+.contacts-phone:hover {
+    color: #756157;
 }
 
-.phone-svg:hover {
-    fill: #756157;
+.contacts-phone:focus-visible {
+    color: #756157;
 }
 
-.phone-svg:focus-visible {
-    fill: #756157;
-}
-
-.phone-svg:active {
-    fill: rgba(117, 97, 87, 0.3);
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .photo-logo-svg {
@@ -576,6 +585,16 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+}
+
+.catalog-filter-group {
+    position: relative;
+    display: block;
+    padding-left: 36px;
 }
 
 .catalog-group {
@@ -595,7 +614,51 @@ h1 {
 
 .control-input {
     font-family: inherit;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #242424;
 }
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    transform: rotate(45deg);
+  }
+  
+  .control-input[type="checkbox"]:checked + .control-mark::after {
+    transform: rotate(-45deg);
+  }
+
+  .control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+  }
+
+  .control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #242424;
+    border-radius: 50%;
+    content: "";
+  }
+
+  .catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .catalog-filter-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .catalog-filter-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
 
 .control {
     font-size: 18px;
@@ -649,22 +712,63 @@ h1 {
 }
 
 .select-control  {
+    width: 292px;
+    height: 49px ;
+    padding: 14px 20px;
+    padding-right: 20px;
+    font: inherit;
+    font-weight: 700;
+    background-color: #ffffff;
+    border: 2px solid #E5E5E5;
+    background-image: url("../images/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    appearance: none;
     font-size: 18px;
-    font-weight: 400;
     line-height: 21px;
     text-align: left;
     color: #333333;
-    margin-right: 200px;
+    margin: auto;
 }
+
+.select-control:hover,
+.select-control:focus {
+  border-color:  #E5E5E5;
+}
+
+.select-control:focus {
+  outline:  2px solid #68A2CA;
+}
+
 
 .search-list {
     display: grid;
-    grid-template-columns: 25px 25px 25px;
+    grid-template-columns: 50px 50px 50px;
     text-align: center;
     padding: 0;
     margin: 0;
     list-style: none;
     color: #000000;
+}
+
+.search-items {
+    text-align: center;
+    padding: 14px 12px;
+    margin: auto;
+    list-style: none;
+    color: #000000;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.search-items-active {
+    text-align: center;
+    padding: 14px 12px;
+    margin: auto;
+    list-style: none;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 4px;
 }
 
 .hotels-list {
@@ -801,7 +905,7 @@ h1 {
     padding: 96px 258px 104px 258px;
 }
 
-.feedback-title-catalog {
+.feedback-catalog-title {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -809,7 +913,7 @@ h1 {
     color: #000000;
 }
 
-.feedback-text-catalog {
+.feedback-catalog-text {
     font-size: 22px;
     line-height: 26px;
     color: #333333; 
