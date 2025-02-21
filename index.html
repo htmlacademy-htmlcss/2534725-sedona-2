@@ -210,20 +210,26 @@
             </p>
 
             <p class="field-group-narrow">
-              <label class="field-label form-label-icon" for="children">Дети:</label>
-              
+              <span class="label-wrapper">
+                <label class="field-label form-label-icon" for="children">Дети:</label>
+                <span></span>
+              </span>
+
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"><path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/></svg>
+                  <svg class="tooltip-icon" width="2" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff" />
+                  </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+
               </span>
-              
-            <span class="counter-wrapper">
-              <button class="minus" type="button"></button>
-              <input class="counter" type="number" id="children" name="children" value="2">
-              <button class="plus" type="button"></button>
-            </span>
+              <span class="counter-wrapper">
+                <button class="minus" type="button"></button>
+                <input class="counter" type="number" id="children" name="children" value="2">
+                <button class="plus" type="button"></button>
+              </span>
             </p>
           </div>
           <button class="button search-form-button" type="submit">Войти</button>

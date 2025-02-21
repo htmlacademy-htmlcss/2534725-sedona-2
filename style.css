@@ -599,6 +599,12 @@ h1 {
     grid-template-columns: 131px 110px;
 }
 
+.label-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .message {
     grid-row: 2 / 3;
     grid-column:  2 / 3;
@@ -621,7 +627,7 @@ h1 {
 
 .form-label-icon {
     position: relative;
-    /*padding-right: 16px;*/
+    padding-right: 16px;
 }
 
 .tooltip {
@@ -634,15 +640,18 @@ h1 {
 
 .tooltip-toggle {
     border: none;
-    background-color: transparent;
     padding: 0;
     margin: 0;
     display: block;
+    width: 26px;
+    height: 26px;
+    background: #83B3D3;
+    border-radius: 50%;
+
 }
 
 .tooltip-icon {
-    width: 26px;
-    height: 26px;
+    margin-right: auto  ;
     color: #83B3D3;
     display: block;
 }
@@ -654,16 +663,17 @@ h1 {
 .tooltip-text {
     background-color: #333333;
     color: rgba(255, 255, 255, 1);
-    font-size: 14px;
-    line-height: 17px;
+    font-family: "PTSans";
+    font-size: 16px;
+    line-height: 20px;
     font-weight: normal;
+    padding: 15px 18px 18px 22px;
     text-transform: none;
-    padding: 5px 8px;
     border-radius: 8px;
     display: block;
     width: 160px;
     position: absolute;
-    bottom: 100%;
+    top: 41px;
     margin-bottom: 6px;
     left: 50%;
     transform: translateX(-50%);
@@ -675,6 +685,8 @@ h1 {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
+
+tool
 
 .tooltip-text:after {
     content:'';
