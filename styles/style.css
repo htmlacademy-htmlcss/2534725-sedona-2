@@ -29,6 +29,7 @@ body {
     background-color: #f2f2f2;
     margin: 0 auto;
     width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-inner {
@@ -55,7 +56,8 @@ body {
 }
 
 .navigation-logo {
-    display: block;
+    display: flex;
+    height: 64px;
     margin-right: 28px;
 }
 
@@ -125,10 +127,10 @@ body {
 }
 
 .navigation-notification {
-    padding: 2px;
+    padding: 5px;
     border-radius: 50%;
-    left: 25px;
-    top: 20px;
+    left: 20px;
+    top: 10px;
     position: absolute;
     font-size: 10px;
     font-weight: 400;
@@ -453,18 +455,32 @@ body {
 }
 
 .page-footer-container {
-    padding: 40px 70px 30px 70px;
+    padding: 45px 70px 30px 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.contacts {
+    display: flex;
+}  
 
 .contacts-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 142px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
 
 .contacts-link-svg {
     fill: #83b3d3;
@@ -575,8 +591,8 @@ h1 {
 } 
 
 .modal-title {
-    width: 413px;
-    font-family: 'PT Sans';
+    width: 500px;
+    font-family: "PTSans", sans-serif;
     font-style: normal;
     font-size: 30px;
     margin: 0;
@@ -591,12 +607,14 @@ h1 {
     display: grid;
     grid-template-columns: 137px 440px;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 23px;
 }
 
 .field-group-narrow {
     display: grid;
-    grid-template-columns: 131px 110px;
+    grid-template-columns: auto 110px;
+    margin: 0;
+    margin-bottom: 48px;
 }
 
 .label-wrapper {
@@ -608,6 +626,10 @@ h1 {
 .message {
     grid-row: 2 / 3;
     grid-column:  2 / 3;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-top: 4px;
 }
 
 .message-error {
@@ -616,6 +638,7 @@ h1 {
 
 .field-label {
     align-self: center;
+    font-family: "PTSans", sans-serif;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -631,11 +654,22 @@ h1 {
 }
 
 .tooltip {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 20px 18px 23px 22px;
+    box-sizing: border-box;
+    text-transform: none;
+    border-radius: 8px;
+    width: 256px;
     position: absolute;
-    margin-top: 3px;
-    margin-left: 62px;
-    width: 26px;
-    height: 26px;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
 }
 
 .tooltip-toggle {
@@ -663,7 +697,7 @@ h1 {
 .tooltip-text {
     background-color: #333333;
     color: rgba(255, 255, 255, 1);
-    font-family: "PTSans";
+    font-family: "PTSans", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: normal;
@@ -723,7 +757,7 @@ h1 {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    padding: 12px 20px;
+    padding: 12px 55px 12px 20px;
     background-color: #F2F2F2;
     background-image: url("../images/calendar.svg");
     background-repeat: no-repeat;
@@ -772,6 +806,7 @@ h1 {
     box-sizing: border-box;
     padding: 10px 10px;
     font-family: inherit;
+    font-family: "PTSans", sans-serif;  
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -804,6 +839,7 @@ h1 {
     border: none;
     border-radius: 10px;
     font-family: inherit;
+    font-family: "PTSans", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -1011,12 +1047,17 @@ h1 {
 
 .toggle-min {
     top: -8px;
-    left: -10px;
+    left: -50px;
+    right: 0%;
+    bottom: 0%;
+    border-radius: 5px;
 }
 
 .toggle-max {
     top: -8px;
-    right: -10px;
+    right: -120px;
+    bottom: 0%;
+    border-radius: 5px;
 }
 
 .range-wrapper-inputs {
