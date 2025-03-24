@@ -1057,7 +1057,7 @@ body {
     background-color: #333333;
 }
 
-h1 {
+.main-catalog-title {
     margin: 0;
     margin-bottom: 8px;
     font-size: 60px;
