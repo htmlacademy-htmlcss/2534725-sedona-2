@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -134,13 +135,13 @@
       <p class="feedback-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="newsletter-form-wrapper">
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
           <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
             required>
           <button class="button-newsletter-button" type="submit">Подписаться</button>
         </div>
       </form>
     </section>
-
   </main>
 
   <footer data-test="footer" class="footer-main">
@@ -194,22 +195,30 @@
           <p class="field-group">
             <label class="field-label" for="date-checkin">Дата заезда:</label>
             <input class="date" type="text" id="date-checkin" name="date-checkin" placeholder="Дата заезда"
-              value="27 Апреля 2020">
+              value="27 Апреля 2020" required>
             <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group">
             <label class="field-label" for="date-checkout">Дата Выезда:</label>
             <input class="date" type="text" id="date-checkout" name="date-checkout" placeholder="Дата Выезда"
-              value="1 сентября 2023">
+              value="1 сентября 2023" required>
             <span class="message">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <div class="group-wrapper">
             <p class="field-group-narrow">
               <label class="field-label" for="adult">Взрослые:</label>
               <span class="counter-wrapper">
-                <button class="minus" type="button"></button>
+                <button class="minus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
                 <input class="counter" type="number" id="adult" name="adult" value="2">
-                <button class="plus" type="button"></button>
+                <button class="plus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
               </span>
             </p>
 
@@ -229,13 +238,21 @@
               </span>
 
               <span class="counter-wrapper">
-                <button class="minus" type="button"></button>
+                <button class="minus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z"  />
+                  </svg>
+                </button>
                 <input class="counter" type="number" id="children" name="children" value="2">
-                <button class="plus" type="button"></button>
+                <button class="plus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
               </span>
             </p>
           </div>
-          <button class="button search-form-button" type="submit">Зайти</button>
+          <button class="search-form-button" type="submit">Найти</button>
         </form>
       </section>
     </div>
