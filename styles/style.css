@@ -76,6 +76,7 @@ body {
     color: inherit;
     font-weight: 700;
     margin-left: 28px;
+    max-width: 590px;
 }
 
 .navigation-user {
@@ -87,6 +88,7 @@ body {
     color: #000000;
     margin-left: auto;
     margin-right: 20px;
+    max-width: 88px;
 }
 
 .navigation-user-link {
@@ -95,6 +97,18 @@ body {
     width: 44px;
     height: 64px;
     text-decoration: none;
+}
+
+.navigation-user-link:hover {
+    opacity: 0.6;
+}
+
+.navigation-user-link:focus {
+    opacity: 0.6;
+}
+
+.navigation-user-link:active {
+    opacity: 0.3;
 }
 
 .navigation-user-link-search {
@@ -118,6 +132,19 @@ body {
     line-height: 24px;
     padding: 20px 16px;
 }
+
+.navigation-link:hover {
+    opacity: 0.7;
+}
+
+.navigation-link:focus {
+    opacity: 0.7;
+}
+
+.navigation-link:active {
+    opacity: 0.6;
+}
+
 
 .navigation-link-active::after {
     content: "";
@@ -156,7 +183,23 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #756157;
+    max-width: 160px;
 }
+
+.button:hover {
+    background-color: rgba(97, 80, 72, 1);
+}
+
+
+.button:focus {
+    background-color: rgba(97, 80, 72, 1);
+}
+
+.button:active {
+    background-color: rgba(117, 97, 87, 1); 
+    color: rgba(255, 255, 255, 0.3);
+}
+
 
 .main-header {
     background-color: #FFFFFF;
@@ -176,6 +219,7 @@ body {
     background-size: contain, cover;
     background-position: bottom center, center;
     background-repeat: no-repeat;
+    background-color: #333333;
 }
 
 .slogan {
@@ -449,11 +493,26 @@ body {
     color: #FFFFFF;
 }
 
+.booking-button:hover {
+    background-color: rgba(97, 80, 72, 1);
+}
+
+.booking-button:focus {
+    background-color: rgba(97, 80, 72, 1);
+}
+
+.booking-button:active {
+    background-color: rgba(117, 97, 87, 1); 
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
 .feedback {
     padding: 12px 20px;
     text-align: center;
     background-image: url("../images/background-form.jpeg");
     background-size: cover;
+    background-color: #333333;
 }
 
 .feedback-title {
@@ -507,7 +566,20 @@ body {
     color: #FFFFFF;
     width: 232px;
     box-sizing: border-box;
-    text-transform: uppercas
+    text-transform: uppercase
+}
+
+.button-newsletter-button:hover {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-newsletter-button:focus {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-newsletter-button:active {
+    background-color: rgba(130, 179, 211, 1);
+    color:  rgba(255, 255, 255, 0.3);
 }
 
 .page-footer-container {
@@ -631,13 +703,43 @@ body {
     right: 52px;
     width: 52px;
     height: 52px;
-    background-color: #ffffff;
+    background-color: rgba(242, 242, 242, 1);
     border: none;
+    cursor: pointer;
+    border-radius: 50%;
+} 
+
+.modal-close-button::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
     background-image: url("../images/modal-close.svg");
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
-} 
+}
+
+.modal-close-button:hover {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:focus {
+    background-color: rgba(230, 230, 230, 1);
+    outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.modal-close-button:active {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:active::before {
+    opacity: 0.3;
+}
 
 .modal-title {
     width: 500px;
@@ -651,6 +753,7 @@ body {
     color: #000000;
     text-transform: uppercase;
 }
+
 
 .field-group {
     display: grid;
@@ -798,6 +901,15 @@ body {
     border: none;
 }
 
+.date:hover {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.date:focus {
+    outline: 3px solid rgba(131, 179, 211, 1);
+    background-color: rgba(230, 230, 230, 1);
+}
+
 .group-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -806,30 +918,70 @@ body {
 }
 
 .minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px 10px;
     width: 40px;
     height: 48px;
     border: none;
     background-color: #F2F2F2;
     border-radius: 4px 0 0 4px;
-    background-image: url("../images/minus.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+}
 
+.minus svg {
+    fill: #756157; 
+    fill-opacity: 0.3;
+}
+
+.minus:hover svg {
+    fill: black;
+    fill-opacity: 1;
+}
+
+.minus:focus svg {
+    outline: 3px solid rgba(130, 179, 211, 1);
+    fill: black;
+    fill-opacity: 1;
+}
+
+.minus:active svg {
+    fill: black;
+    fill-opacity: 0.2;
 }
 
 .plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px 10px;
     width: 40px;
     height: 48px;
     border: none;
     background-color: #F2F2F2;
     border-radius: 0 4px 4px 0;
-    background-image: url("../images/plus.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
+.plus svg {
+    fill: #756157; 
+    fill-opacity: 0.3;
+}
+
+.plus:hover svg {
+    fill: black;
+    fill-opacity: 1;
+}
+
+.plus:focus svg {
+    outline: 3px solid rgba(130, 179, 211, 1);
+    fill: black;
+    fill-opacity: 1;
+}
+
+.plus:active svg {
+    fill: black;
+    fill-opacity: 0.2;
+}
 
 .counter {
     background-color: #F2F2F2;
@@ -861,8 +1013,8 @@ body {
     display: grid;
     grid-template-columns: 40px 31px 40px;
 }
-  
-.button.search-form-button {
+
+.search-form-button {
     display: block; 
     width: 100%;
     text-transform: uppercase;
@@ -880,6 +1032,19 @@ body {
     color: #FFFFFF;
 } 
   
+.search-form-button:hover {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.search-form-button:focus {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.search-form-button:active {
+    background-color: rgba(130, 179, 211, 1);
+    color:  rgba(255, 255, 255, 0.3);
+}
+
 
 .main-catalog {
     display: flex;
@@ -889,6 +1054,7 @@ body {
     margin: 0;
     background-image: url("../images/catalog-img.jpeg");
     background-size: cover;
+    background-color: #333333;
 }
 
 h1 {
@@ -918,8 +1084,10 @@ h1 {
 
 .breadcrumbs-item:not(:last-child)::after {
     content: "";
-    left: 23px;
+    right: -18px;
     bottom: 0;
+    top: 0;
+    margin: auto;
     position: absolute;
     width: 8px;
     height: 11px;
@@ -936,6 +1104,19 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.breadcrumbs-link-home:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs-link-home:focus {
+    opacity: 0.6;
+}
+
+.breadcrumbs-link-home:active {
+    opacity: 0.3;
+}
+
 
 .breadcrumbs-link {
     margin: 0;
@@ -1010,6 +1191,26 @@ h1 {
     width: 16px;
     height: 16px;
     border: 2px solid #242424;
+}
+
+.control-input:hover~.control-label {
+    opacity: 0.6;
+}
+
+.control-input:hover+.control-mark {
+    opacity: 0.6;
+}
+
+.control-input:focus+.control-mark {
+    outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.control-input:active~.control-label {
+    opacity: 0.3;
+}
+
+.control-input:active+.control-mark {
+    opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
@@ -1092,12 +1293,15 @@ h1 {
 }
 
 .range-toggle:hover {
-    background-color: #FFFFFF;
+    opacity: 0.6;
 }
 
-.range-toggle:active,
 .range-toggle:focus {
-    border: 3px solid rgba(131, 179, 211, 1)
+    opacity: 0.6;
+}
+
+.range-toggle:active {
+    opacity: 0.3;
 }
 
 .toggle-min {
@@ -1123,7 +1327,7 @@ h1 {
 
 .range-input {
     width: 143px;
-    padding: 12px 20px;
+    padding: 12px 45px 12px 20px;
     font-family: inherit;
     font-size: 18px;
     line-height: 24px;
@@ -1134,6 +1338,15 @@ h1 {
     appearance: textfield;
     border-radius: 4px 0 0 4px;
     box-sizing: border-box;
+}
+
+.range-input:hover {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.range-input:focus {
+    outline: 3px solid rgba(131, 179, 211, 1);
+    background-color: rgba(230, 230, 230, 1);
 }
 
 .range-input-right {
@@ -1171,6 +1384,19 @@ h1 {
     border: none;
     text-transform: uppercase;
     font-family: inherit;
+} 
+
+.button-start:hover {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-start:focus {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-start:active {
+    background-color: rgba(130, 179, 211, 1);
+    color:  rgba(255, 255, 255, 0.3);
 }
 
 .button-end {
@@ -1186,6 +1412,19 @@ h1 {
     border: none;
     text-transform: uppercase;
     font-family: inherit;
+}
+
+.button-end:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-end:focus {
+    outline: 3px solid  rgba(131, 179, 211, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-end:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .select-search {
@@ -1253,6 +1492,18 @@ h1 {
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.search-link:hover {
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.search-link:focus {
+    border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.search-link:active {
+    border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .search-link-view-1 {
@@ -1359,6 +1610,19 @@ h1 {
     font-family: inherit;
 }
 
+.button-button-sub:hover {
+    background-color: rgba(97, 80, 72, 1);
+}
+
+.button-button-sub:focus {
+    background: rgba(97, 80, 72, 1);
+}
+
+.button-button-sub:active {
+    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .button-button-fav {
     font-size: 16px;
     font-weight: 700;
@@ -1373,6 +1637,20 @@ h1 {
     text-transform: uppercase;
     font-family: inherit;
 }
+
+.button-button-fav:hover {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-button-fav:focus {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-button-fav:active {
+    background-color: rgba(130, 179, 211, 1);
+    color:  rgba(255, 255, 255, 0.3);
+}
+
 
 .button-button-fav-green {
     font-size: 16px;
@@ -1389,6 +1667,20 @@ h1 {
     text-transform: uppercase;
     font-family: inherit;
 }
+
+.button-button-fav-green:hover {
+    background-color: rgba(108, 158, 66, 1);
+}
+
+.button-button-fav-green:focus {
+    background-color: rgba(108, 158, 66, 1);
+}
+
+.button-button-fav-green:active {
+    background-color: rgba(125, 181, 79, 1);
+    color:  rgba(255, 255, 255, 0.3);
+}
+
 
 .rating {
     display: flex;
@@ -1451,6 +1743,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     width: 60px;
     height: 60px;
     background-color: #82B3D3;
@@ -1461,6 +1754,22 @@ h1 {
     text-align: center;
     border-radius: 4px;
     color: #FFFFFF;
+    border: 1px solid #82B3D3;
+}
+
+.pagination-link:hover {
+    background-color: rgba(104, 162, 202, 1);
+    border: 1px solid rgba(130, 179, 211, 1);
+}
+
+.pagination-link:focus {
+    background-color: rgba(104, 162, 202, 1);
+    border: 1px solid rgba(130, 179, 211, 1);
+}
+
+.pagination-link:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(130, 179, 211, 1);
 }
 
 .pagination-link-ellipses {
